@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="common" template="/WEB-INF/views/template/default.jsp"/>
+
+    <definition name="users-list" extends="common">
+        <put-attribute name="body" value="/WEB-INF/views/content/users-list.jsp"/>
+    </definition>
+    <definition name="users-add-edit" extends="common">
+        <put-attribute name="body" value="/WEB-INF/views/content/users-add-edit.jsp"/>
+    </definition>
+
+    <definition name="courses-list" extends="common">
+        <put-attribute name="body" value="/WEB-INF/views/content/courses-list.jsp"/>
+    </definition>
+    <definition name="courses-add-edit" extends="common">
+        <put-attribute name="body" value="/WEB-INF/views/content/courses-add-edit.jsp"/>
+    </definition>
+
+    <definition name="lessons-add-edit" extends="common">
+        <put-attribute name="body" value="/WEB-INF/views/content/lessons-add-edit.jsp"/>
+    </definition>
+
+    <definition name="dashboard" extends="common">
+        <put-attribute name="body" value="/WEB-INF/views/content/dashboard.jsp"/>
+    </definition>
+
+    <definition name="static-page" extends="common">
+        <put-attribute name="body" value="/WEB-INF/views/content/static-page.jsp"/>
+    </definition>
+
+    <definition name="auth" template="/WEB-INF/views/template/default-auth.jsp">
+        <put-attribute name="body" value="/WEB-INF/views/content/auth.jsp"/>
+    </definition>
+
+</tiles-definitions>
